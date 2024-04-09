@@ -1,0 +1,44 @@
+[
+    {
+        "id": "303e12494cac6160",
+        "type": "tab",
+        "label": "Minimal Scailable Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "13a21b8e2e6b3fb3",
+        "type": "http in",
+        "z": "303e12494cac6160",
+        "name": "Scailable JSON input",
+        "url": "/sclbl-json",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "d2a088bab67ede2e"
+            ]
+        ]
+    },
+    {
+        "id": "d2a088bab67ede2e",
+        "type": "debug",
+        "z": "303e12494cac6160",
+        "name": "log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 120,
+        "wires": []
+    }
+]

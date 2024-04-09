@@ -1,0 +1,291 @@
+[
+    {
+        "id": "4242727cc0e74dce",
+        "type": "tab",
+        "label": "Visualizing Scailable Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a2f7325c65b36272",
+        "type": "http in",
+        "z": "4242727cc0e74dce",
+        "name": "Scailable JSON input",
+        "url": "/sclbl-json",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "e4dba366f61faf58"
+            ]
+        ]
+    },
+    {
+        "id": "5a4f330f4c0c76b2",
+        "type": "jimp-image",
+        "z": "4242727cc0e74dce",
+        "name": "Get Scailable Image",
+        "data": "http://localhost:8081/img.jpg?id=0",
+        "dataType": "str",
+        "ret": "buf",
+        "parameter1": "payload",
+        "parameter1Type": "msg",
+        "parameter2": "",
+        "parameter2Type": "msg",
+        "parameter3": "",
+        "parameter3Type": "msg",
+        "parameter4": "",
+        "parameter4Type": "msg",
+        "parameter5": "",
+        "parameter5Type": "msg",
+        "parameter6": "",
+        "parameter6Type": "msg",
+        "parameter7": "",
+        "parameter7Type": "msg",
+        "parameter8": "",
+        "parameter8Type": "msg",
+        "sendProperty": "payload",
+        "sendPropertyType": "msg",
+        "parameterCount": 0,
+        "jimpFunction": "none",
+        "selectedJimpFunction": {
+            "name": "none",
+            "fn": "none",
+            "description": "Just loads the image.",
+            "parameters": []
+        },
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "65309741a813a8f8"
+            ]
+        ]
+    },
+    {
+        "id": "f691274515d1c8d5",
+        "type": "image viewer",
+        "z": "4242727cc0e74dce",
+        "name": "Show image",
+        "width": "640",
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54342f0e23c9161c",
+        "type": "inject",
+        "z": "4242727cc0e74dce",
+        "name": "Fire every 0.1 seconds",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "annotations",
+                "v": "annotations",
+                "vt": "global"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 280,
+        "wires": [
+            [
+                "5a4f330f4c0c76b2"
+            ]
+        ]
+    },
+    {
+        "id": "65309741a813a8f8",
+        "type": "annotate-image",
+        "z": "4242727cc0e74dce",
+        "name": "Add Bboxes to Scailabel Image",
+        "fill": "",
+        "stroke": "#ffC000",
+        "lineWidth": 5,
+        "fontSize": 24,
+        "fontColor": "#ffC000",
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "f691274515d1c8d5"
+            ]
+        ]
+    },
+    {
+        "id": "e4dba366f61faf58",
+        "type": "function",
+        "z": "4242727cc0e74dce",
+        "name": "Scailabe JSON parser",
+        "func": "const output = Object.values(msg.payload.output)[2];\n\nconst color = [\"blue\", \"green\", \"lime\", \"maroon\", \"navy\", \"orange\", \"purple\", \"red\", \"teal\"];\n\nlet annotations = [];\n\nfor (let i = 0; i < output.length; i += 6) {\n    if (output[5 + i] < 0) break;\n    annotations.push({\n        type: \"rect\",\n        fontSize: 14,\n        stroke: color[output[5 + i]],\n        fontColor: color[output[5 + i]],\n        label: output[4 + i].toFixed(2),\n        x: output[i],\n        y: output[1 + i],\n        w: output[2 + i] - output[i],\n        h: output[3 + i] - output[1 + i]\n    });\n}\n\nglobal.set('annotations', annotations);\nmsg.logs = annotations;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "finalize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "libs": [],
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "f3e632cf08ab4e88"
+            ]
+        ]
+    },
+    {
+        "id": "f3e632cf08ab4e88",
+        "type": "debug",
+        "z": "4242727cc0e74dce",
+        "name": "Log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "logs",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "089ecc110f6ebeb4",
+        "type": "http request",
+        "z": "4242727cc0e74dce",
+        "name": "Stop Scailable inference",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8081/stop",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 790,
+        "y": 80,
+        "wires": [
+            [
+                "9a0d1dceaee5fc54"
+            ]
+        ],
+        "icon": "font-awesome/fa-ban"
+    },
+    {
+        "id": "e456342b774ab50b",
+        "type": "inject",
+        "z": "4242727cc0e74dce",
+        "name": "Click to stop",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "089ecc110f6ebeb4"
+            ]
+        ]
+    },
+    {
+        "id": "1abb88ab0f80f754",
+        "type": "http request",
+        "z": "4242727cc0e74dce",
+        "name": "Start Scailable inference",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8081/start",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-check"
+    },
+    {
+        "id": "a232930f222a3190",
+        "type": "inject",
+        "z": "4242727cc0e74dce",
+        "name": "Click to start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "1abb88ab0f80f754"
+            ]
+        ]
+    },
+    {
+        "id": "9a0d1dceaee5fc54",
+        "type": "function",
+        "z": "4242727cc0e74dce",
+        "name": "Reset bboxes",
+        "func": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "finalize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "libs": [],
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    }
+]

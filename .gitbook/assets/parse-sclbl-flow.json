@@ -1,0 +1,63 @@
+[
+    {
+        "id": "303e12494cac6160",
+        "type": "tab",
+        "label": "Parsing Scailable Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4f0a4c38fd2be302",
+        "type": "debug",
+        "z": "303e12494cac6160",
+        "name": "Log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "logs",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a151cc4c689cbf94",
+        "type": "function",
+        "z": "303e12494cac6160",
+        "name": "Scailabe JSON parser",
+        "func": "const counts = Object.values(msg.payload.output)[0];\n\nif (counts[0]==3) {\n    msg.logs = 3;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "finalize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "libs": [],
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "4f0a4c38fd2be302"
+            ]
+        ]
+    },
+    {
+        "id": "129781503010de2e",
+        "type": "http in",
+        "z": "303e12494cac6160",
+        "name": "Scailable JSON input",
+        "url": "/sclbl-json",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "a151cc4c689cbf94"
+            ]
+        ]
+    }
+]

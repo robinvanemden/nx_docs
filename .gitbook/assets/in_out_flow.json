@@ -1,0 +1,188 @@
+[
+    {
+        "id": "86ce6e8c62c079f5",
+        "type": "tab",
+        "label": "On Image Scailable Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d963e29dd51940be",
+        "type": "debug",
+        "z": "86ce6e8c62c079f5",
+        "name": "Log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "logs",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a00e9b324209a04c",
+        "type": "http in",
+        "z": "86ce6e8c62c079f5",
+        "name": "Sclbl JSON output",
+        "url": "/sclbl-json",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 930,
+        "y": 520,
+        "wires": [
+            [
+                "e9efd4ee7758dea2"
+            ]
+        ]
+    },
+    {
+        "id": "81ec32ff5b78d54c",
+        "type": "function",
+        "z": "86ce6e8c62c079f5",
+        "name": "Insert array into payload json",
+        "func": "let vector = new Float32Array(msg.payload);\n\n\nlet uint = new Uint8Array(vector.buffer);\nlet buffer = Buffer.from(uint);\nlet base64String = buffer.toString('base64');\n\nconst jsoninput = `{\n    \"messageType\": \"SocketInput\",\n        \"InputTensor\":\n    {\n        \"inputType\": \"raw\",\n            \"inputFormat\": \"orderedArray\",\n                \"outputFormat\": \"namedObject\",\n                    \"input\": \"${base64String}\"\n    }\n} `\n\n\nmsg.logs = jsoninput\nmsg.payload = jsoninput\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "d963e29dd51940be",
+                "c1d7ddc635cd865b"
+            ]
+        ]
+    },
+    {
+        "id": "3907e12168638214",
+        "type": "debug",
+        "z": "86ce6e8c62c079f5",
+        "name": "Log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "logs",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e9efd4ee7758dea2",
+        "type": "function",
+        "z": "86ce6e8c62c079f5",
+        "name": "Scailabe JSON parser",
+        "func": "const output = Object.values(msg.payload.output);\nmsg.logs = output[0]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "global.set('countright', 0);\nglobal.set('countleft', 0);\nglobal.set('countrightfont', \"________0________\")",
+        "finalize": "var annotations = [{\n    type: \"rect\",\n    stroke: \"blue\",\n    x: 0,\n    y: 0,\n    w: 0,\n    h: 0\n}]\n\nglobal.set('annotations', annotations);",
+        "libs": [],
+        "x": 1160,
+        "y": 520,
+        "wires": [
+            [
+                "3907e12168638214"
+            ]
+        ]
+    },
+    {
+        "id": "c1d7ddc635cd865b",
+        "type": "http request",
+        "z": "86ce6e8c62c079f5",
+        "name": "Sclbl JSON input",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.99:8081/jsonTensorInput",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": true,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "117bb0b7ae810b74",
+        "type": "function",
+        "z": "86ce6e8c62c079f5",
+        "name": "Input array",
+        "func": "msg.payload = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "81ec32ff5b78d54c",
+                "440864a4506e39a7"
+            ]
+        ]
+    },
+    {
+        "id": "440864a4506e39a7",
+        "type": "debug",
+        "z": "86ce6e8c62c079f5",
+        "name": "Log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3e0bbfc868861178",
+        "type": "inject",
+        "z": "86ce6e8c62c079f5",
+        "name": "Run Inference",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "117bb0b7ae810b74"
+            ]
+        ]
+    }
+]
