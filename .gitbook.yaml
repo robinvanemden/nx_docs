@@ -1,0 +1,6 @@
+root: ./
+
+redirects:
+  device-specific/scailable-supported-devices/videology-scailx: miscellaneous/nx-ai-manager-on-scailx
+
+  
