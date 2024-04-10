@@ -6,13 +6,15 @@
 
 * [Get started with the NX AI Manager plugin](nx-ai-manager/get-started-with-the-nx-ai-manager-plugin.md)
 * [1. Install Network Optix](nx-ai-manager/1.-install-network-optix.md)
-* [2. Configure the Nx AI Manager plugin](nx-ai-manager/2.-configure-the-nx-ai-manager-plugin.md)
-* [3. Other Network Optix Plugin Settings](nx-ai-manager/3.-other-network-optix-plugin-settings.md)
-* [4. Manual Plugin Installation](nx-ai-manager/4.-manual-plugin-installation.md)
-* [5. Troubleshooting](nx-ai-manager/5.-troubleshooting.md)
-* [6. Removing the Nx AI Manager](nx-ai-manager/6.-removing-the-nx-ai-manager.md)
-* [7. Advanced configuration](nx-ai-manager/7.-advanced-configuration/README.md)
-  * [7.1 External Post-processing](nx-ai-manager/7.-advanced-configuration/7.1-external-post-processing.md)
+* [2. Install NX AI Manager plugin](nx-ai-manager/2.-install-nx-ai-manager-plugin.md)
+* [3. Configure the Nx AI Manager plugin](nx-ai-manager/2.-configure-the-nx-ai-manager-plugin.md)
+* [4. Other Network Optix Plugin Settings](nx-ai-manager/3.-other-network-optix-plugin-settings.md)
+* [5. Manual Plugin Installation](nx-ai-manager/4.-manual-plugin-installation.md)
+* [6. Troubleshooting](nx-ai-manager/5.-troubleshooting.md)
+* [7. Removing the Nx AI Manager](nx-ai-manager/6.-removing-the-nx-ai-manager.md)
+* [8. Advanced configuration](nx-ai-manager/7.-advanced-configuration/README.md)
+  * [8.1 NX AI Manager Manual Installation](nx-ai-manager/7.-advanced-configuration/8.1-nx-ai-manager-manual-installation.md)
+  * [8.2 External Post-processing](nx-ai-manager/7.-advanced-configuration/7.1-external-post-processing.md)
 
 ## Nx AI Cloud
 
