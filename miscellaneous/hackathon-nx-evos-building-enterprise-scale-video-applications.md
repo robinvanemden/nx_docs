@@ -1,8 +1,6 @@
 # Hackathon: Nx EVOS: Building Enterprise-Scale Video Applications
 
-Welcome to the Nx hackerearth EVOS hackathon!
-
-Please read our documentation to understand how the NX AI system works and what you can do with it: [https://nx.docs.scailable.net/\
+Welcome to the Nx hackerearth EVOS hackathon\![\
 \
 ](https://nx.docs.scailable.net/)The NX AI team is working hard to prepare the NX AI platform for a release alongside NX Gen 6. The NX AI plugin will be packaged with the installation of NX Server Gen 6, but until then, some extra installation steps will be necessary while the NX AI platform is in beta. Some steps will be deprecated and unnecessary with the full release and will be clearly indicated.
 
@@ -15,7 +13,7 @@ Follow the instructions closely to get NX and NX AI running on your system.
    ](https://admin.sclbl.nxvms.com/nx-login)This step will no longer be necessary with the full release.
 3. Install NX AI Manager:\
    The NX AI platform comes in two parts. First, a plugin that integrates with the NX Mediaserver, followed by the NX AI Runtime, which runs as a separate process. First, install the NX AI Runtime by pasting the following line into a terminal on your device:\
-   sudo bash -ic "$(wget -q -O - [https://get.sclbl.net/hackathon/manager.html](https://get.sclbl.net/hackathon/manager.html))"\
+   `sudo bash -ic "$(wget -q -O -` [`https://get.sclbl.net/hackathon/manager.html`](https://get.sclbl.net/hackathon/manager.html)`)"`\
    Follow the prompted instructions to complete the installation.\
    This step will no longer be necessary with the full release.
 4. Register NX AI Manager\
@@ -28,7 +26,7 @@ Follow the instructions closely to get NX and NX AI running on your system.
    This step will no longer be necessary with the full release.
 5. Install plugin\
    Once the NX AI runtime is installed and running, it’s time to install the plugin. Paste the following line in a terminal on your device:\
-   sudo bash -c "$(wget -q -O - [https://get.sclbl.net/hackathon](https://get.sclbl.net/hackathon))"  package=default\
+   `sudo bash -c "$(wget -q -O -` [`https://get.sclbl.net/hackathon`](https://get.sclbl.net/hackathon)`)"  package=default`\
    This process should install the plugin and prompt if it should restart the NX Mediaserver, it might be necessary to restart the NX Mediaserver for the plugin to be detected and properly loaded.\
    This step will no longer be necessary with the full release.
 6. Continue with documentation\
