@@ -12,6 +12,10 @@ Participants of the "Nx EVOS: Building Enterprise Scale Video Applications": We 
 [See here](miscellaneous/hackathon-nx-evos-building-enterprise-scale-video-applications.md) for more hackathon-related information.
 {% endhint %}
 
+{% hint style="warning" %}
+Ensure you download Nx Meta version 6.0 or later to be able to use the Nx AI Plugin.
+{% endhint %}
+
 The Nx AI Manager plugin is a tool that enables you to create and manage large-scale Edge AI solutions using [Network Optix Meta](https://www.networkoptix.com/nx-meta) and the [Network Optix toolkit](https://www.networkoptix.com/nx-meta/developer-tools). With this plugin, you can turn any compatible edge device, like a router, gateway, or IPC, into a "smart" device that can run advanced Artificial Intelligence (AI) and Machine Learning (ML) models on input data. Using AI and ML models, you can analyze a video stream and gain valuable insights, such as counting the number of cars passing by in the video stream.
 
 The documentation here offers detailed instructions on setting up and configuring your edge AI solutions on Linux-based [Nx Meta-supported edge hardware](https://www.networkoptix.com/nx-meta/nx-meta-platform-support).
