@@ -26,39 +26,50 @@ If you select an on-line system you are directed to the system page.
 
 The page shows the servers in the system and lists all the devices and their groups.
 
-If the system is on-line. You can use the "here" link to select multiple servers and assign a model to all selected servers.
-
 The same page when the system is off-line. You cannot do anything now.
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 09.36.38.png" alt=""><figcaption><p>overview of a single off-line system</p></figcaption></figure>
 
 ## AI model deployment and management
 
-In addition to listing your devices, the Nx AI Cloud platform allows you to deploy models to your devices. Although deployment can be done directly from the device, mass deployment using the Platform is easier and more scalable.
+You can assign or replace a model on a single server or you can select multiple servers and assign a single model to all the selected servers.
 
-To deploy a model to a device, select a model and subsequently select a device or a device group (for mass deployment) to assign the model to the device.&#x20;
+### Assign or replace a model on a single server
 
-To deploy a model to a group of devices, select the group in the device listing and click the "Assign to {groupname}" button.
+To assign or replace a model on a single server you need to click on the 'Details' button on the system page. You will be directed to the server page.
 
-<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 10.15.16.png" alt=""><figcaption><p>overview of a single server in the system</p></figcaption></figure>
 
-In the next step, you will be guided to the models listing, where you can choose a model to assign.
+To assign an additional model to the server you can press 'Assign a new model' or the 'add' button. To replace a model press the button with the left-right arrow in it.
 
-<figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+You will be directed to the 'Models listing'.
 
-The blue bar at the top of the page allows you to cancel the assignment.
+On the top you get a new navigation bar that shows you are currently in assigning mode. You can use that to go back to the models listing page, back to the server or cancel the whole assignment process.
 
-{% hint style="info" %}
-Our edge devices regularly "ping" our servers to inspect model and configuration deployments whenever they can access our cloud. After a model is assigned to a device, the device will download the assigned model at the first opportunity.
-{% endhint %}
+Once you have found the model you want to assign or replace use the button 'Use this model'.&#x20;
 
-### Tracking your model assignments
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 10.18.27.png" alt=""><figcaption><p>models listing</p></figcaption></figure>
 
-On the cloud, each model detail page displays a listing of the devices where this model is used.
+Now, one of two things could have happened.
 
-Alternatively, the used model is also shown on the detail page for each device.
+One. You get a pop-up where you need to confirm your credentials. This is normal when you want to change some things in an Nx system.
 
-<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 10.34.41.png" alt=""><figcaption><p>re-authentocation pop-up</p></figcaption></figure>
 
+You need to enter your credentials. When that is done, the pop-up is closed and you need to press the button 'Use this model' again. You are then redirected back to the server page.
 
+Two. You do not have to re-authenticate yourself and are redirected back to the server page directly.
 
+### Assign a single model to all the selected servers
+
+To start you need to be on the system page, which shows you all the servers and all devices in the system.
+
+Just below the 'Servers' header on this page there is a link called 'here' which starts the process of selecting server to assign a model to.
+
+Once pressed, a new column with checkboxes will be added to the servers and you can use them to select the servers you want to assign a new model to.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 11.03.15.png" alt=""><figcaption><p>multiple server selection activated</p></figcaption></figure>
+
+If you select one or more servers the 'Assign a new model' will activate. Pressing this button will start the model assignment just like updating a model for a single server.
+
+Note: assigning a model to multiple servers will always remove all other models and replace them with the new model you selected.
