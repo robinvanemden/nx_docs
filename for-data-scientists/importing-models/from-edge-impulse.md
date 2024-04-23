@@ -76,7 +76,7 @@ You are now ready to deploy your model to your selected edge device.
 
 ## 3. **Deploying (and testing) your model on your edge device**
 
-There are multiple ways in which you can use the Nx AI cloud to [deploy your model to you selected edge device](../../nx-ai-cloud/deployment-and-device-management/). However, if you still need to configure the edge device, the easiest way of setting things up is to navigate to the AI manager that is running on the device. It can usually be found at port `8081` or through the device setup menu. You should get here:
+There are multiple ways in which you can use the Nx AI cloud to [deploy your model to you selected edge device](../../nx-ai-cloud/deployment-and-device-management.md). However, if you still need to configure the edge device, the easiest way of setting things up is to navigate to the AI manager that is running on the device. It can usually be found at port `8081` or through the device setup menu. You should get here:
 
 ![](<../../.gitbook/assets/Screen Shot 2023-02-06 at 15.30.57.png>)
 
