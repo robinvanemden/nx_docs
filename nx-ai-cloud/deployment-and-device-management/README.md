@@ -4,15 +4,33 @@ description: How do we use the platform for model deployment.
 
 # Deployment and device management
 
-The Nx AI Cloud platform allows you to (mass) deploy models to target edge devices. Effectively, you can "swap" the models that run on an edge device (configured using the [AI manager](broken-reference)) remotely and change the device configuration. The latter you can do at a large scale: you can flexibly group devices and deploy models to groups of devices.
+The Nx AI Cloud platform allows you to (mass) deploy models to target devices. Effectively, you can "swap" the models that run on a device (configured using the [AI manager](broken-reference)) remotely and change the device configuration. The latter you can do at a large scale: you can deploy models to all the devices on a server.
 
-## An overview of your devices
+## An overview of your systems and devices
 
-The DEVICES tab on the Nx AI Cloud platform shows all devices registered to your account. Device registration is the first step in setting up your AI manager on your edge device, and the result will be a listing of the device in this overview.
+The SYSTEMS tab on the Nx AI Cloud platform shows all systems registered to your cloud account.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+If the system is on-online the name of the system and the Details button are available.
 
-Note that you can manage the device name, view its activity, and view additional details regarding the device installation on this page. You can also group devices for mass deployment.
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 09.31.10.png" alt=""><figcaption><p>overview of systems with one on-line system</p></figcaption></figure>
+
+If the system is off-line you cannot continue until the system comes on-line.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-04-23 at 09.33.41.png" alt=""><figcaption><p>listing of one system that is off-line</p></figcaption></figure>
+
+## Overview of a single system
+
+If you select an on-line system you are directed to the system page.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 09.31.17.png" alt=""><figcaption><p>overview of a single on-line system</p></figcaption></figure>
+
+The page shows the servers in the system and lists all the devices and their groups.
+
+If the system is on-line. You can use the "here" link to select multiple servers and assign a model to all selected servers.
+
+The same page when the system is off-line. You cannot do anything now.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2024-04-23 at 09.36.38.png" alt=""><figcaption><p>overview of a single off-line system</p></figcaption></figure>
 
 ## AI model deployment and management
 
