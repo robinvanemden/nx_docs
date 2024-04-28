@@ -10,12 +10,12 @@ _Raspberry Pi 4b equivalent or higher AARCH64 CPU with at least 4GB of RAM_\
 
 
 **OS Requirements**\
-_Ubuntu Linux LTS version 18.04 or 20.04_\
+_Ubuntu Linux LTS version 20.04 or 22.04_\
 \
 **Software Requirements**\
-_Nx AI Manager 3.26+                                \[X86\_64, Arm32, Arm64]_\
-_Nx Meta Client 5.1                                      \[X86\_64, Arm32, Arm64]_\
-_Nx Meta Server 5.1                                      \[X86\_64, Arm32, Arm64]_
+_Nx AI Manager 4.0+                                     \[X86\_64, Arm32, Arm64]_\
+_Nx Meta Client 6.0+                                      \[X86\_64, Arm32, Arm64]_\
+_Nx Meta Server 6.0+                                      \[X86\_64, Arm32, Arm64]_
 {% endhint %}
 
 ## Performance recommendations
