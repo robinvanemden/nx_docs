@@ -18,8 +18,8 @@ For example:
 
 * If the average (mean) color value is 100, and our scale is 50:
   * For a pixel with a red color value of 150:
-    * We subtract the mean: $$150−100=50150−100=50$$
-    * Then we divide by the scale: $$5050=15050​=1$$
+    * We subtract the mean: $$150−100=50$$
+    * Then we divide by the scale: $$50 / 50​=1$$
   * So, the normalized red value would be 1.
 
 This process transforms the original color values to a new scale that's easier for the computer to work with, typically ranging between -1 and 1 or 0 and 1. It's like changing the measurements of something from a variety of units (inches, centimeters, yards) all into meters so that they are easier to compare.
