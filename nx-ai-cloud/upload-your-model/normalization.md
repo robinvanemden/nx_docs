@@ -24,3 +24,5 @@ For example:
 
 This process transforms the original color values to a new scale that's easier for the computer to work with, typically ranging between -1 and 1 or 0 and 1. It's like changing the measurements of something from a variety of units (inches, centimeters, yards) all into meters so that they are easier to compare.
 
+If you do not want to transform the **original\_color\_value**, just use 0 for the mean, and 1 for the scale.
+
