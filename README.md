@@ -7,7 +7,7 @@ Consequently, our AI Manager documentation is undergoing rapid transformation to
 {% endhint %}
 
 {% hint style="success" %}
-Participants of the "Nx EVOS: Building Enterprise Scale Video Applications": We encourage you to use the latest development version of the Nx AI Manager. \
+Participants of the "Nx EVOS: Building Enterprise Scale Video Applications": We encourage you to use the latest version of the Nx AI Manager. \
 \
 [See here](miscellaneous/hackathon-nx-evos-building-enterprise-scale-video-applications.md) for more hackathon-related information.
 {% endhint %}
