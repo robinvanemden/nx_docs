@@ -21,7 +21,8 @@
 * [Introduction](nx-ai-cloud/introduction.md)
 * [Registration](nx-ai-cloud/registration.md)
 * [Deployment and device management](nx-ai-cloud/deployment-and-device-management.md)
-* [Upload your model](nx-ai-cloud/upload-your-model.md)
+* [Upload your model](nx-ai-cloud/upload-your-model/README.md)
+  * [Normalization](nx-ai-cloud/upload-your-model/normalization.md)
 
 ## OAXS Implementation
 

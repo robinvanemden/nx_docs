@@ -3,7 +3,7 @@
 &#x20;This section of our documentation describes how to create vision models that can be easily deployed to your edge devices running Nx Meta Server.&#x20;
 
 {% hint style="info" %}
-This section of the docs focuses on creating models. Once you have a model ready in ONNX format, you [can find instructions on uploading it to the Nx Cloud platform here](../nx-ai-cloud/upload-your-model.md).&#x20;
+This section of the docs focuses on creating models. Once you have a model ready in ONNX format, you [can find instructions on uploading it to the Nx Cloud platform here](../nx-ai-cloud/upload-your-model/).&#x20;
 {% endhint %}
 
 ## High-level process

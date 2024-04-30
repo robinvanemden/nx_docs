@@ -13,4 +13,4 @@ Model deployment from PyTorch is simple to achieve by exporting your PyTorch mod
 * You can find details on PyTorch to ONNX exports [here](https://pytorch.org/tutorials/advanced/super\_resolution\_with\_onnxruntime.html). You can find an insightful tutorial [here](https://deci.ai/blog/how-to-convert-a-pytorch-model-to-onnx/).
 * You can find an example using PyTorch and sclblonnx [here](https://github.com/scailable/sclblonnx/blob/master/examples/example\_03.py).
 
-After obtaining a [clean ONNX graph that adheres to our requirements](../onnx-requirements.md), you can [upload it to the Nx AI cloud](../../nx-ai-cloud/upload-your-model.md) for deployment.
+After obtaining a [clean ONNX graph that adheres to our requirements](../onnx-requirements.md), you can [upload it to the Nx AI cloud](../../nx-ai-cloud/upload-your-model/) for deployment.

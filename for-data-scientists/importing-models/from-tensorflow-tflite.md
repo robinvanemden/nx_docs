@@ -17,4 +17,4 @@ Model deployment from Tensorflow (or the subset of tensorflow optimized for edge
 * Exporting from TF to ONNX is easy using [the tf2onnx tools](https://github.com/onnx/tensorflow-onnx), as illustrated in these examples: [here](https://github.com/scailable/sclblonnx/blob/master/examples/example\_04.py) and [here](https://onnxruntime.ai/docs/tutorials/tf-get-started.html#converting-a-model).
 * Otherwise, you can upload the TFLite model directly, and the cloud will take care of exporting the model to ONNX.
 
-After obtaining a [clean ONNX graph that adheres to our requirements](../onnx-requirements.md), you can upload it to the [Nx AI cloud for deployment](../../nx-ai-cloud/upload-your-model.md).
+After obtaining a [clean ONNX graph that adheres to our requirements](../onnx-requirements.md), you can upload it to the [Nx AI cloud for deployment](../../nx-ai-cloud/upload-your-model/).

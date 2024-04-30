@@ -34,7 +34,7 @@ Follow the instructions closely to get NX and NX AI running on your system.
 7. Continue with documentation\
    Consult the documentation about how to configure the plugin: [NX AI Plugin Configuration](https://nx.docs.scailable.net/nx-ai-manager/get-started-with-the-nx-ai-manager-plugin/2.-configure-the-nx-ai-manager-plugin)
 8. Create and upload your own models\
-   Create your own custom models and deploy them easily to the NX AI platform: [NX AI Models Introduction](https://nx.docs.scailable.net/for-data-scientists/introduction) - after which you can [upload your model](../nx-ai-cloud/upload-your-model.md).
+   Create your own custom models and deploy them easily to the NX AI platform: [NX AI Models Introduction](https://nx.docs.scailable.net/for-data-scientists/introduction) - after which you can [upload your model](../nx-ai-cloud/upload-your-model/).
 9. Create your own custom data processors.\
    Create your own custom data processors and easily integrate them with the NX AI Platform: [External Processors Docs.\
    ](https://nx.docs.scailable.net/nx-ai-manager/get-started-with-the-nx-ai-manager-plugin/7.-advanced-configuration/7.1-external-post-processing)Check out our examples and integration SDK to get started: [Integration SDK](https://github.com/scailable/sclbl-integration-sdk).

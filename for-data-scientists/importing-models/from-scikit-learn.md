@@ -12,4 +12,4 @@ Scikit-learn contains a collection of classic ML models that can be used to solv
 
 Model deployment from scikit-learn is simple to achieve by exporting your sklearn model to ONNX using the [skl2onnx](https://onnx.ai/sklearn-onnx/) package.
 
-After obtaining a [clean ONNX graph that adheres to our requirements](../onnx-requirements.md), you can upload it to the [Nx AI cloud for deployment](../../nx-ai-cloud/upload-your-model.md).
+After obtaining a [clean ONNX graph that adheres to our requirements](../onnx-requirements.md), you can upload it to the [Nx AI cloud for deployment](../../nx-ai-cloud/upload-your-model/).
