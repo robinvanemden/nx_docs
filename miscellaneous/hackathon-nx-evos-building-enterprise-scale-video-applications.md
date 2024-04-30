@@ -15,9 +15,9 @@ Follow the instructions closely to get NX and NX AI running on your system.
    `sudo bash -ic "$(wget -q -O - https://get.sclbl.net/nx_plugin)" package=Plugin-v4-0`\
    This process should install the plugin and prompt if it should restart the NX Mediaserver, it might be necessary to restart the NX Mediaserver for the plugin to be detected and properly loaded.\
    This step will no longer be necessary with the full release.
-4. Continue with documentation\
+4. Continue with documentation.\
    Consult the documentation about how to configure the plugin: [NX AI Plugin Configuration](https://nx.docs.scailable.net/nx-ai-manager/get-started-with-the-nx-ai-manager-plugin/2.-configure-the-nx-ai-manager-plugin)
-5. Create and upload your own models\
+5. Create and upload your own models.\
    Create your own custom models and deploy them easily to the NX AI platform: [NX AI Models Introduction](https://nx.docs.scailable.net/for-data-scientists/introduction) - after which you can [upload your model](../nx-ai-cloud/upload-your-model/).
 6. Create your own custom data processors.\
    Create your own custom data processors and easily integrate them with the NX AI Platform: [External Processors Docs.\
