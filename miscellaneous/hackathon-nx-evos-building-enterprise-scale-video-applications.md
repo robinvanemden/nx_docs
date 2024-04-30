@@ -14,7 +14,7 @@ Follow the instructions closely to get NX and NX AI running on your system.
    Paste the following line in a terminal on your device:\
    `sudo bash -ic "$(wget -q -O - https://get.sclbl.net/nx_plugin)" package=Plugin-v4-0`\
    This process should install the plugin and prompt if it should restart the NX Mediaserver, it might be necessary to restart the NX Mediaserver for the plugin to be detected and properly loaded.\
-   This step will no longer be necessary with the full release.
+   This step will no longer be necessary with the full release, when the plugin will be part of the Gen6 Nx Server.
 4. Continue with documentation.\
    Consult the documentation about how to configure the plugin: [NX AI Plugin Configuration](https://nx.docs.scailable.net/nx-ai-manager/get-started-with-the-nx-ai-manager-plugin/2.-configure-the-nx-ai-manager-plugin)
 5. Create and upload your own models.\
