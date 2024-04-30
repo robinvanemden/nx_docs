@@ -2,7 +2,7 @@
 
 Welcome to the Nx hackerearth EVOS hackathon\![\
 \
-](https://nx.docs.scailable.net/)The NX AI team is working hard to prepare the NX AI platform for a release alongside NX Gen 6. The NX AI plugin will be packaged with the installation of NX Server Gen 6, but until then, some extra installation steps will be necessary while the NX AI platform is in beta. Some steps will be deprecated and unnecessary with the full release and will be clearly indicated.
+](https://nx.docs.scailable.net/)The NX AI team is working hard to prepare the NX AI platform for a release alongside NX Gen 6. The NX AI plugin will be packaged with the installation of NX Server Gen 6, but until then, some extra installation steps will be necessary while the NX AI platform is in beta.&#x20;
 
 Follow the instructions closely to get NX and NX AI running on your system.
 
