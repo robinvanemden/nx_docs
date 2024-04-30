@@ -7,7 +7,7 @@ Welcome to the Nx hackerearth EVOS hackathon\![\
 Follow the instructions closely to get NX and NX AI running on your system.
 
 1. Install NX and create an account.\
-   Follow the instructions in our docs to install Nx Mediaserver on your system. It is important to create an Nx Cloud account during this process and make sure you login the Nx Client into that account: [Installation Instructions](https://nx.docs.scailable.net/nx-ai-manager/get-started-with-the-nx-ai-manager-plugin/1.-install-network-optix).
+   Follow the instructions in our docs to install Nx Mediaserver on your system. It is important to create an Nx Cloud account during this process and [connect your system](https://nx.docs.scailable.net/nx-ai-manager/1.-install-network-optix#connect-your-nx-meta-system-with-your-nx-cloud-account) to your Nx Cloud account: [Installation Instructions](https://nx.docs.scailable.net/nx-ai-manager/get-started-with-the-nx-ai-manager-plugin/1.-install-network-optix).
 2. Log into NX AI Cloud with an NX account.\
    To register your device to the NX AI Cloud, you need to be logged in to the NX AI Cloud with the Nx account you created in the previous step. Kindly navigate to the NX AI Cloud and log in: [NX AI Cloud Manager](https://admin.sclbl.nxvms.com/login).
 3. Install plugin.\
