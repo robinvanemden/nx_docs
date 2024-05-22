@@ -66,11 +66,11 @@ At this point you can use your Edge Impulse API key and project ID to import you
 
 After filling out the API- and project- keys you can click the "Link model" button, and your Edge Impulse model will be imported into your Nx AI library:
 
-![](<../../.gitbook/assets/Screen Shot 2023-02-06 at 15.25.20.png>)
+![](<../../.gitbook/assets/Screenshot from 2024-05-22 14-26-41.png>)
 
 You can obviously change the model name and documentation (as usual), but effectvely, after the import, the model is directly available for deployment. Once you click "Return to models" you will see the model on the top of you model list:
 
-![](<../../.gitbook/assets/Screen Shot 2023-02-06 at 15.27.38.png>)
+![](<../../.gitbook/assets/Screenshot from 2024-05-22 14-28-47.png>)
 
 You are now ready to deploy your model to your selected edge device.
 
