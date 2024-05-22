@@ -26,7 +26,7 @@
 
 ## For AI Accelerators
 
-* [Introduction](for-ai-accelerators/introduction-to-oaxs.md)
+* [OAAX Introduction](for-ai-accelerators/introduction-to-oaxs.md)
 
 ## For Data Scientists
 
