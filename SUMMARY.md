@@ -24,15 +24,9 @@
 * [Upload your model](nx-ai-cloud/upload-your-model/README.md)
   * [Normalization](nx-ai-cloud/upload-your-model/normalization.md)
 
-## OAAX Implementation
+## For AI Accelerators
 
-* [Introduction to OAAX](oaax-implementation/introduction-to-oaxs.md)
-* [Operation Conversion Toolchains](oaax-implementation/operation-conversion-toolchains/README.md)
-  * [Specification](oaax-implementation/operation-conversion-toolchains/specification.md)
-  * [Example](oaax-implementation/operation-conversion-toolchains/example.md)
-* [XPU Operation Runtimes](oaax-implementation/xpu-operation-runtimes/README.md)
-  * [Specification](oaax-implementation/xpu-operation-runtimes/specification.md)
-  * [Example](oaax-implementation/xpu-operation-runtimes/example.md)
+* [Introduction](for-ai-accelerators/introduction-to-oaxs.md)
 
 ## For Data Scientists
 
