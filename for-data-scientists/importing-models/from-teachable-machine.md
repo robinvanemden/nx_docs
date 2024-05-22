@@ -20,7 +20,7 @@ We currently support super easy exports from image classification models trained
 5. After few seconds "Converting model", you will be able to download a `.zip` archive&#x20;
 6. Upload the zip archive directly through the admin platform.\
    \
-   ![](../../.gitbook/assets/upload-tm.png)\
+   ![](<../../.gitbook/assets/Screenshot from 2024-05-22 14-07-44.png>)\
    \
 
 

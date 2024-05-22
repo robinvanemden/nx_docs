@@ -48,17 +48,17 @@ At this point we **only** support imports of the **FOMO MobileNetV2 and Yolov5**
 
 ## 2. Coupling your Edge Impulse model with Nx
 
-After training your model, you can leave the Edge Impulse platform (but do leave it open in a tab) and move to [https://admin.sclbl.net](https://admin.sclbl.net). After logging in at the Nx AI cloud you will arrive at your dashboard showing your current models and devices (which might both be 0 when you are just getting started):
+After training your model, you can leave the Edge Impulse platform (but do leave it open in a tab) and move to [https://admin.sclbl.nxvms.com/](https://admin.sclbl.nxvms.com/). After logging in at the Nx AI cloud you will arrive at your dashboard showing your current models and devices (which might both be 0 when you are just getting started):
 
-![](<../../.gitbook/assets/300 dashboard.png>)
+![](<../../.gitbook/assets/Screenshot from 2024-05-22 13-49-04.png>)
 
-Click the model tab at the top, and next click the green "Add a model button":
+Click the model tab on the left, and next click the  "Add a model" button:
 
-![](<../../.gitbook/assets/301 models-home.png>)![](<../../.gitbook/assets/312 add-model-choice.png>)
+![](<../../.gitbook/assets/Screenshot from 2024-05-22 13-56-45.png>)![](<../../.gitbook/assets/Screenshot from 2024-05-22 13-57-31.png>)
 
 You will arrive at the model upload page, from where you can [select "linking an Edge Impulse project](https://admin.sclbl.net/link-edgeimpulse)". Yes, you can also just click [this](https://admin.sclbl.net/link-edgeimpulse) link. This all should get you here:
 
-![](<../../.gitbook/assets/316 add-model-edgeimpulse.png>)
+![](<../../.gitbook/assets/Screenshot from 2024-05-22 13-57-34.png>)
 
 At this point you can use your Edge Impulse API key and project ID to import your trained model directly from Edge Impulse. Your API key kan be found at your dashboard, and the Project ID can be found in the URL:
 

@@ -12,23 +12,23 @@ The SYSTEMS tab on the Nx AI Cloud platform shows all systems registered to your
 
 If the system is on-online the name of the system and the Details button are available.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 09.31.10.png" alt=""><figcaption><p>overview of systems with one on-line system</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-32-48.png" alt=""><figcaption><p>overview of systems with one on-line system</p></figcaption></figure>
 
 If the system is off-line you cannot continue until the system comes on-line.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-04-23 at 09.33.41.png" alt=""><figcaption><p>listing of one system that is off-line</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-33-39.png" alt=""><figcaption><p>listing of one system that is off-line</p></figcaption></figure>
 
 ## Overview of a single system
 
 If you select an on-line system you are directed to the system page.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 09.31.17.png" alt=""><figcaption><p>overview of a single on-line system</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-34-42.png" alt=""><figcaption><p>overview of a single on-line system</p></figcaption></figure>
 
 The page shows the servers in the system and lists all the devices and their groups.
 
 The same page when the system is off-line. You cannot do anything now.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 09.36.38.png" alt=""><figcaption><p>overview of a single off-line system</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-35-29.png" alt=""><figcaption><p>overview of a single off-line system</p></figcaption></figure>
 
 ## AI model deployment and management
 
@@ -38,7 +38,7 @@ You can assign or replace a model on a single server or you can select multiple 
 
 To assign or replace a model on a single server you need to click on the 'Details' button on the system page. You will be directed to the server page.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 10.15.16.png" alt=""><figcaption><p>overview of a single server in the system</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-36-57.png" alt=""><figcaption><p>overview of a single server in the system</p></figcaption></figure>
 
 To assign an additional model to the server you can press 'Assign a new model' or the 'add' button. To replace a model press the button with the left-right arrow in it.
 
@@ -48,17 +48,19 @@ On the top you get a new navigation bar that shows you are currently in assignin
 
 Once you have found the model you want to assign or replace use the button 'Use this model'.&#x20;
 
-<figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 10.18.27.png" alt=""><figcaption><p>models listing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-38-32.png" alt=""><figcaption><p>models listing</p></figcaption></figure>
 
 Now, one of two things could have happened.
 
-One. You get a pop-up where you need to confirm your credentials. This is normal when you want to change some things in an Nx system and have logged in a while ago.
+One: You do not have to re-authenticate yourself and are redirected back to the server page directly with a message that the model has been assigned.
+
+<figure><img src="../.gitbook/assets/success-model-assign.png" alt=""><figcaption></figcaption></figure>
+
+Two: You get a pop-up where you need to confirm your credentials. This is normal when you want to change some things in an Nx system and have logged in a while ago.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 10.34.41.png" alt=""><figcaption><p>re-authentocation pop-up</p></figcaption></figure>
 
 You need to enter your credentials. When that is done, the pop-up is closed and you need to press the button 'Use this model' again. You are then redirected back to the server page.
-
-Two. You do not have to re-authenticate yourself and are redirected back to the server page directly.
 
 ### Assign a single model to all the selected servers
 
@@ -66,9 +68,11 @@ To start you need to be on the system page, which shows you all the servers and 
 
 Just below the 'Servers' header on this page there is a link called 'here' which starts the process of selecting server to assign a model to.
 
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-41-21.png" alt=""><figcaption></figcaption></figure>
+
 Once pressed, a new column with checkboxes will be added to the servers and you can use them to select the servers you want to assign a new model to.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2024-04-23 at 11.03.15.png" alt=""><figcaption><p>multiple server selection activated</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot from 2024-05-22 13-40-10.png" alt=""><figcaption><p>multiple server selection activated</p></figcaption></figure>
 
 If you select one or more servers the 'Assign a new model' will activate. Pressing this button will start the model assignment just like updating a model for a single server.
 
