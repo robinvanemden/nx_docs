@@ -15,6 +15,7 @@
 * [8. Advanced configuration](nx-ai-manager/7.-advanced-configuration/README.md)
   * [8.1 NX AI Manager Manual Installation](nx-ai-manager/7.-advanced-configuration/8.1-nx-ai-manager-manual-installation.md)
   * [8.2 External Post-processing](nx-ai-manager/7.-advanced-configuration/7.1-external-post-processing.md)
+  * [8.3 Training Loop](nx-ai-manager/7.-advanced-configuration/8.3-training-loop.md)
 
 ## Nx AI Cloud
 
