@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 onnx
 onnxsim
-scblblonnx
+sclblonnx
 onnxruntime
 opencv-python
 ```
