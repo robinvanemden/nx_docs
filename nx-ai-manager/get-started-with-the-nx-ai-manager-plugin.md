@@ -1,5 +1,9 @@
 # Get started with the NX AI Manager plugin
 
+{% hint style="info" %}
+If you are getting error messages or not seeing any bounding boxes in your Nx Client, check out our [5.-troubleshooting.md](5.-troubleshooting.md "mention") page.
+{% endhint %}
+
 ## Requirements
 
 {% hint style="info" %}
