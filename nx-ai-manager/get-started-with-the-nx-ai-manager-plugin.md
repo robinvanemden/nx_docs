@@ -1,7 +1,7 @@
 # Get started with the NX AI Manager plugin
 
 {% hint style="info" %}
-If you are getting error messages or not seeing any bounding boxes in your Nx Client, check out our [5.-troubleshooting.md](5.-troubleshooting.md "mention") page.
+If you are getting error messages or not seeing any bounding boxes in your Nx Client, check out our [troubleshooting](../support-and-troubleshooting/troubleshooting/ "mention") page.
 {% endhint %}
 
 ## Requirements
@@ -78,36 +78,36 @@ For other hardware architectures such as ARM, Nvidia Jetson Orin, Hailo, etc, pl
 
 To get started with Nx and the Nx AI Manager plugin, follow the steps outlined below:&#x20;
 
-{% content-ref url="1.-install-network-optix.md" %}
-[1.-install-network-optix.md](1.-install-network-optix.md)
+{% content-ref url="install-network-optix.md" %}
+[install-network-optix.md](install-network-optix.md)
 {% endcontent-ref %}
 
-{% content-ref url="2.-configure-the-nx-ai-manager-plugin.md" %}
-[2.-configure-the-nx-ai-manager-plugin.md](2.-configure-the-nx-ai-manager-plugin.md)
+{% content-ref url="configure-the-nx-ai-manager-plugin.md" %}
+[configure-the-nx-ai-manager-plugin.md](configure-the-nx-ai-manager-plugin.md)
 {% endcontent-ref %}
 
-{% content-ref url="3.-other-network-optix-plugin-settings.md" %}
-[3.-other-network-optix-plugin-settings.md](3.-other-network-optix-plugin-settings.md)
+{% content-ref url="other-network-optix-plugin-settings.md" %}
+[other-network-optix-plugin-settings.md](other-network-optix-plugin-settings.md)
 {% endcontent-ref %}
 
-{% content-ref url="4.-manual-plugin-installation.md" %}
-[4.-manual-plugin-installation.md](4.-manual-plugin-installation.md)
+{% content-ref url="manual-plugin-installation.md" %}
+[manual-plugin-installation.md](manual-plugin-installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="5.-troubleshooting.md" %}
-[5.-troubleshooting.md](5.-troubleshooting.md)
+{% content-ref url="../support-and-troubleshooting/troubleshooting/" %}
+[troubleshooting](../support-and-troubleshooting/troubleshooting/)
 {% endcontent-ref %}
 
-{% content-ref url="6.-removing-the-nx-ai-manager.md" %}
-[6.-removing-the-nx-ai-manager.md](6.-removing-the-nx-ai-manager.md)
+{% content-ref url="removing-the-nx-ai-manager.md" %}
+[removing-the-nx-ai-manager.md](removing-the-nx-ai-manager.md)
 {% endcontent-ref %}
 
-{% content-ref url="7.-advanced-configuration/" %}
-[7.-advanced-configuration](7.-advanced-configuration/)
+{% content-ref url="advanced-configuration/" %}
+[advanced-configuration](advanced-configuration/)
 {% endcontent-ref %}
 
-{% content-ref url="7.-advanced-configuration/7.1-external-post-processing.md" %}
-[7.1-external-post-processing.md](7.-advanced-configuration/7.1-external-post-processing.md)
+{% content-ref url="advanced-configuration/external-post-processing.md" %}
+[external-post-processing.md](advanced-configuration/external-post-processing.md)
 {% endcontent-ref %}
 
 \

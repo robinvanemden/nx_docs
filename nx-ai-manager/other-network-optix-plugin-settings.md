@@ -1,4 +1,4 @@
-# 3. Other Network Optix Plugin Settings
+# 4. Other Network Optix Plugin Settings
 
 The Network Optix plugin contains several settings to manage the behavior.&#x20;
 
@@ -48,7 +48,7 @@ Feature Extraction is compatible with any model which outputs bounding boxes, se
 
 The NX AI Manager has the functionality to detect loitering. This is a tool to detect if a certain object is detected for longer than the desired amount of time.
 
-Loitering detection requires a compatible model, see [onnx-requirements.md](../for-data-scientists/onnx-requirements.md "mention"). It is generally recommended to use loitering detection in tandem with [#feature-extraction](3.-other-network-optix-plugin-settings.md#feature-extraction "mention"), since Identity models generate vectors for their input images, it is useful to first detect objects in a frame, and then send these extracted sub-frames to the Identity model for identification.
+Loitering detection requires a compatible model, see [onnx-requirements.md](../for-data-scientists/onnx-requirements.md "mention"). It is generally recommended to use loitering detection in tandem with [#feature-extraction](other-network-optix-plugin-settings.md#feature-extraction "mention"), since Identity models generate vectors for their input images, it is useful to first detect objects in a frame, and then send these extracted sub-frames to the Identity model for identification.
 
 The Loitering Detection postprocessor receives the identity data from the AI model along with the location in the larger frame. It then algorithmically matches the identified object to an object detected in previous frames. Finally it calculates how long the identified object has been detected, and compares it to the given threshold.&#x20;
 
@@ -90,7 +90,7 @@ Line crossing detection can be used to detect or count objects which cross a def
 
 Make use of the NX interface to draw a line on the video frame and click 'Apply' for changes to take effect.
 
-When a crossing is detected, an event is generated. This event can be configured to trigger any action. See [#adding-event-rules](2.-configure-the-nx-ai-manager-plugin.md#adding-event-rules "mention") .
+When a crossing is detected, an event is generated. This event can be configured to trigger any action. See [#adding-event-rules](configure-the-nx-ai-manager-plugin.md#adding-event-rules "mention") .
 
 <figure><img src="../.gitbook/assets/crossing event.png" alt=""><figcaption><p>Line Crossing Detection event configuration</p></figcaption></figure>
 
