@@ -1,16 +1,20 @@
-# 7. Removing the Nx AI Manager
+# 6. Removing the Nx AI Manager
 
-## Uninstalling the Nx AI manager
+## Uninstalling the Nx AI Manager
 
-To uninstall the Nx AI Manager from your Nx Meta server, log in to the server console and execute the following command:
+It might be desired to remove the Nx AI Manager installation, due to a corrupted install or if you want to reinstall the Nx AI Manager with a different acceleration library.
 
-`sudo /opt/networkoptix-metavms/mediaserver/bin/plugins/nxai_plugin/nxai_manager/etc/init uninstall`
+The AI Manager can be removed by simply deleting the folder, assuming default installation, log in to the server console and execute the following command:
+
+`sudo rm -r /opt/networkoptix-metavms/mediaserver/bin/plugins/nxai_plugin/nxai_manager/`
+
+When the mediaserver is restarted, the plugin will reinstall the Nx AI Manager.
 
 ## Removing the Nx AI plugin
 
 To remove the Nx AI plugin from your Nx Meta server, log in to the server console and execute the following command:
 
-`sudo rm -r /opt/networkoptix-metavms/mediaserver/bin/plugins/nxai_*`
+`sudo rm -r /opt/networkoptix-metavms/mediaserver/bin/plugins/nxai_plugin`
 
 ## Restarting the Nx Meta mediaserver
 
